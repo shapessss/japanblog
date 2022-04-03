@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: shapessss/japanblog
+
+publish_mode: editorial_workflow
+media_folder: "assets/images"
+
+collections:
+  - name: "blog"      # Used in routes, e.g., /admin/collections/blog
+    label: "Blog"     # Used in the UI
+    folder: "_posts"  # The path to the folder where the documents are stored
+    create: true      # Allow users to create new documents in this collection
+    slug: "{% raw %}{{year}}-{{month}}-{{day}}-{{slug}}{% endraw %}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "markdown" # Add this is you use a file extension other than .md
+
+    fields: # The front matter fields for each document
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"} # Custom excerpt
+      - {label: "Body", name: "body", widget: "markdown"} # Mandatory body field for markdown files
