@@ -37,7 +37,6 @@ collections:
     label: 'Config'
     editor:
       preview: false
-    create: true
     files:
     - label: 'Navigation'
       name: 'navigation'
