@@ -50,10 +50,19 @@ section {
     margin: 40px 0 0 0;
 }
 
-nav a, p a {
+nav a {
+    color: $black;
+    text-decoration: none;
+}
+
+nav a.selected, p a {
     color: $black;
     text-decoration: none;
     border-bottom: 3px solid $red;
+}
+
+img {
+    max-width: 780px;
 }
 
 p.read-more {
