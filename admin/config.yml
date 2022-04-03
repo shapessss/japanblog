@@ -24,7 +24,6 @@ collections:
     label: 'Pages'
     editor:
       preview: false
-    create: true
     files:
     - label: 'About'
       name: 'about'
